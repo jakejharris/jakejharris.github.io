@@ -1,0 +1,29 @@
+{
+  "name": "jakejharris.github.io",
+  "version": "1.0.0",
+  "description": "My Site :)",
+  "main": "index.js",
+  "scripts": {
+    "build:pug": "pug src/pug/ -o dist/html/ --pretty",
+    "build:scss": "node-sass src/scss/ -o dist/css/",
+    "build:ts": "tsc --outDir dist/js/ src/ts/script.ts",
+    "build": "npm run build:pug && npm run build:scss && npm run build:ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakejharris/jakejharris.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakejharris/jakejharris.github.io/issues"
+  },
+  "homepage": "https://github.com/jakejharris/jakejharris.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "typescript": "^5.2.2"
+  }
+}
